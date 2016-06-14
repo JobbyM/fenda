@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>      <!--全局-->
+    <link rel="stylesheet" type="text/css" href="css/1.css"/>       <!--本案-->
+    <title id="title">分答</title>
+    <script src="js/zepto.min.js"></script>
+    <script>
+      //计算基础字号函数
+      var calcBaseFontSize=function(winWidth){
+          //设计宽度
+          var designWidth=320;
+          //设计中的最小字号
+          var designFontSize=10; // 12
+          return winWidth<=designWidth?designFontSize:(((winWidth)/designWidth)*designFontSize);
+      };
+      //屏幕宽度
+      var winWidth=$(window).width();
+
+      //根据屏幕宽度计算出的基础字号
+      var baseFontSize=calcBaseFontSize(winWidth);
+      // //若设置了页面两边留白
+      // if(config.bothPadding){
+      //     winWidth=winWidth-config.bothPadding*baseFontSize*2;
+      //     baseFontSize=calcBaseFontSize(winWidth);
+      // }
+      $('html').css('font-size',baseFontSize+'px');
+    </script>
+</head>
+<body>
+<header>
+  <div>
+    <a href="">问题榜</a><a href="">新晋榜</a><a href="">才华榜</a>
+  </div>
+  <a href=""></a>
+</header>
+<div id="search" style="display: none;">
+  <div>
+    <section>
+      <form action="/search">
+        <a href="javascript:;"></a>
+        <div>
+          <input type="text" placeholder="输入昵称、头衔关键字找人">
+        </div>
+        <button type="submit">搜索</button>
+      </form>
+    </section>
+    <div></div>
+  </div>
+</div>
+<div id="Questions">
+  <ul>
+    <li><a href="">
+      <div><p>酷暑难耐的夏夜，能听你唱一首清凉的晚安曲吗？</p></div>
+      <div>
+        <span>陈嬛Erika｜北漂唱作人，前太阳马戏团沙画家</span>
+        <div>
+          <div><img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt=""><span></span></div>
+          <div>
+            <span class="bubble bubble-red" style="float:none;">
+              <span class="bubble-tail"></span>
+              <span class="wave3"></span>
+              <span>限时免费听</span>
+            </span>
+          </div>
+          <span></span>
+        </div>
+      </div>
+    </a></li>
+    <li><a href="">
+      <div><p>如何做读书笔记？怎样安排读书和笔记的时间</p></div>
+      <div>
+        <span>采铜｜心里学人，《精进》作者</span>
+        <div>
+          <div><img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt=""><span></span></div>
+          <div>
+            <span class="bubble" style="float:none;">
+              <span class="bubble-tail"></span>
+              <span class="wave3"></span>
+              <span>限时免费听</span>
+            </span>
+          </div>
+          <div><span>47</span><span>人偷偷听</span></div>
+        </div>
+      </div>
+    </a></li>
+    <li><a href="">
+      <div><p>汪青年今天股市又暴跌了，分答科技也不能幸免，您怎么看16年下半年的A 股和您提供的OLED 智能机器等行业后续的表现？</p></div>
+      <div>
+        <span>汪泽其｜Justin Z. Wang | 哈佛校友前上市公司CEO微博大V</span>
+        <div>
+          <div><img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt=""><span></span></div>
+          <div>
+            <span class="bubble" style="float:none;">
+              <span class="bubble-tail"></span>
+              <span class="wave3"></span>
+              <span>限时免费听</span>
+            </span>
+          </div>
+          <div><span>47</span><span>人偷偷听</span></div>
+        </div>
+      </div>
+    </a></li>
+  </ul>
+</div>
+</body>
+</html>
