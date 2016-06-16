@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>      <!--全局-->
+    <link rel="stylesheet" type="text/css" href="css/2.css"/>       <!--本案-->
+    <title id="title">分答</title>
+    <script src="js/zepto.min.js"></script>
+    <script>
+      //计算基础字号函数
+      var calcBaseFontSize=function(winWidth){
+          //设计宽度
+          var designWidth=320;
+          //设计中的最小字号
+          var designFontSize=10; // 12
+          return winWidth<=designWidth?designFontSize:(((winWidth)/designWidth)*designFontSize);
+      };
+      //屏幕宽度
+      var winWidth=$(window).width();
+
+      //根据屏幕宽度计算出的基础字号
+      var baseFontSize=calcBaseFontSize(winWidth);
+      // //若设置了页面两边留白
+      // if(config.bothPadding){
+      //     winWidth=winWidth-config.bothPadding*baseFontSize*2;
+      //     baseFontSize=calcBaseFontSize(winWidth);
+      // }
+      $('html').css('font-size',baseFontSize+'px');
+    </script>
+</head>
+<body>
+<div id="main">
+  <div id="header">
+    <span></span>
+  </div>
+  <div id="TutorDetail">
+    <div>
+      <a href="">
+        <div>
+          <img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt="">
+          <span></span>
+        </div>
+      </a>
+      <h1>孙小刚</h1>
+      <p>移动互联网社群有偿知识分享平台CEO</p>
+      <p>B2C,平台，产品，新媒体，O2O、用户、App，移动互联网，社群相关。不敢说专家，因为变化比知识积累更快。与代码有关的不聊。与互联网无关的不扯。</p>
+      <span></span>
+      <span></span>
+      <span></span>
+      <p>
+        <a href="">
+          <span></span>
+          <span>收听</span>
+        </a>
+        <span>
+          <span>1205</span><span>人收听</span>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div id="Question">
+    <div>
+      <form action="" class="question-form">
+        <div class="text-wrap">
+          <textarea maxlength="60" placeholder="向孙晓刚提问，等Ta语音回答；超过48小时未回答，将按支付路径全额退款"></textarea>
+          <span class="counter">
+            <span>0</span>
+            <span>/</span>
+            <span>60</span>
+          </span>
+        </div>
+        <div class="tips">
+          <label for="">
+            <input type="checkbox" style="opacity:0;">
+            <svg style="display:inline-block;vertical-align:middle;fill:#1CCDA6;" height="24"
+              viewBox="0 0 24 24" width="24" data-reactid=".0.0.1.0.1">
+              <path d="M0 0h24v24H0z" fill="none" data-reactid=".0.0.1.0.1.0"></path>
+              <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" data-reactid=".0.0.1.0.1.1"></path>
+            </svg>
+            <span>公开提问，回答每被人偷偷听1次，你从中分成￥0.5</span>
+          </label>
+        </div>
+        <div class="price">
+          <span>￥</span><span>9.9</span>
+        </div>
+        <div class="btn-panel">
+          <button>写好了</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="QuestionList">
+    <div>
+      <div class="header-bar">
+        <p class="left">
+          <span>回答了</span>
+          <span>159</span>
+          <span>个问题，总收入</span>
+          <span>1319.4</span>
+          <span>元</span>
+        </p>
+        <p></p>
+        <div class="right">
+          <a href="javascript:;" class="order-btn">最新</a>
+          <span>|</span>
+          <a href="javascript:;" class="order-btn current">默认</a>
+        </div>
+      </div>
+      <ul class="questions">
+        <li class="a-question">
+          <div>
+            <a href="">
+              <div>
+                <img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt="">
+                <span></span>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <p class="question-content">您是有偿知识分享的从业者，那么可以谈谈您使用分答的动机吗？</p>
+                <p class="offer">￥1</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <div>
+              <img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt="" class="avatarImg">
+              <img src="images/Ft5o9F6sVsq8s1oAMi8ZfJ5wzhIw" alt="">
+              <span></span>
+            </div>
+            <input type="hidden" valut="nothing">
+            <a href="" class="bubble" style="width: 10.8rem;">
+              <span class="bubble-tail"></span>
+              <div>
+                <sapn class="wave1"></sapn>
+                <sapn class="wave2"></sapn>
+                <sapn class="wave3"></sapn>
+              </div>
+              <span>1元偷偷听</span>
+            </a>
+            <span>
+              <span>44</span><span>"</span>
+            </span>
+          </div>
+          <div class="question-footer">
+            <span class="time">12天前</span>
+            <span></span>
+            <span class="tips">0人呵呵</span>
+            <span class="tips">1人偷偷听</span>
+          </div>
+        </li>
+        <li class="a-question">
+          <div>
+            <a href="">
+              <div>
+                <img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt="">
+                <span></span>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <p class="question-content">您是有偿知识分享的从业者，那么可以谈谈您使用分答的动机吗？</p>
+                <p class="offer">￥1</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <div>
+              <img src="images/FvdOEv7xZqkUxJl4zZaGphZ4rejz" alt="" class="avatarImg">
+              <img src="images/Ft5o9F6sVsq8s1oAMi8ZfJ5wzhIw" alt="">
+              <span></span>
+            </div>
+            <input type="hidden" valut="nothing">
+            <a href="" class="bubble">
+              <span class="bubble-tail"></span>
+              <div>
+                <sapn class="wave1"></sapn>
+                <sapn class="wave2"></sapn>
+                <sapn class="wave3"></sapn>
+              </div>
+              <span>1元偷偷听</span>
+            </a>
+            <span>
+              <span>44</span><span>"</span>
+            </span>
+          </div>
+          <div class="question-footer">
+            <span class="time">12天前</span>
+            <span></span>
+            <span class="tips">0人呵呵</span>
+            <span class="tips">1人偷偷听</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footerbar"><a href="/" class="fb-item fb-current">热门</a><a href="/me/feed" class="fb-item">收听</a><a href="/albums" class="fb-item">发现</a><a href="/me" class="fb-item">我的</a></div>
+</body>
+</html>
